@@ -1,0 +1,51 @@
+/* ---------------------------------------------------------------------
+    QUOTE
+--------------------------------------------------------------------- */
+.quote {
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 75px 0 50px 0;
+  display: grid;
+  place-content: center;
+}
+
+.quote__container {
+  max-width: 950px;
+}
+
+.quote__sentence {
+  font-family: 'jomolhari', serif;
+  font-size: var(--header-desktop-text);
+}
+
+.quote__author {
+  font-family: 'raleway', sans-serif;
+  font-size: var(--base-text);
+  letter-spacing: 1.75px;
+}
+
+/* TABLET */
+@media all and (max-width: 768px) {
+  .quote {
+    padding: 50px 3rem 0 3rem;
+  }
+
+  .quote__sentence {
+    font-size: 30px;
+  }
+
+  .quote__author {
+    font-size: 0.75rem;
+  }
+}
+
+/* MOBILE */
+@media all and (max-width: 576px) {
+  .quote {
+    padding: 50px 2rem 0 2rem;
+  }
+
+  .quote__sentence {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,117 @@
+/* ---------------------------------------------------------------------
+    FEATURES
+--------------------------------------------------------------------- */
+
+.features {
+  padding: 50px 7rem 75px 7rem;
+  background-color: var(--primary-color);
+  /* background-color: orange; */
+  /* height: 750px; */
+}
+
+.features__header {
+  font-size: var(--header-desktop-text);
+  font-family: 'jomolhari', serif;
+}
+
+.features__layout {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* background-color: yellow; */
+}
+
+.features__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4rem;
+}
+
+.features__grid-3 {
+  margin-top: -1rem;
+}
+
+.features__office {
+  text-align: right;
+}
+
+.features__office-img {
+  max-width: 100%;
+  /* height: 500px; */
+}
+
+.features__item-header {
+  font-size: var(--subheader-text);
+  font-family: 'raleway-bold', sans-serif;
+  color: var(--text-color);
+  letter-spacing: 0.5px;
+}
+
+.features__item-text {
+  font-family: 'raleway', sans-serif;
+  font-size: var(--base-text);
+  color: var(--subtext-color);
+}
+
+.features__btn-link {
+  height: 50px;
+  font-size: var(--subheader-text);
+  display: grid;
+  place-items: center;
+  font-family: 'raleway-bold', sans-serif;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.features__btn-link:hover {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+/* LARGE TABLET */
+@media all and (max-width: 1100px) {
+  .features__header {
+    text-align: center;
+  }
+  .features__office {
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  .features__office-img {
+    max-width: 100%;
+  }
+
+  .features__layout {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* TABLET */
+@media all and (max-width: 768px) {
+  .features {
+    padding: 50px 3rem;
+  }
+
+  .features__header {
+    font-size: var(--header-tablet-text);
+  }
+}
+
+/* MOBILE */
+@media all and (max-width: 576px) {
+  .features__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .features__office {
+    margin-top: 3rem;
+  }
+
+  .features__header {
+    font-size: var(--header-mobile-text);
+    margin-bottom: -1rem;
+  }
+}

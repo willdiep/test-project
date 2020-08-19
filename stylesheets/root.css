@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'raleway';
+  src: url('/assets/fonts/raleway/Raleway-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'raleway-bold';
+  src: url('/assets/fonts/raleway/Raleway-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'jomolhari';
+  src: url('/assets/fonts/jomolhari/Jomolhari.ttf') format('truetype');
+}
+
+:root {
+  --primary-color: #fcfbf7;
+  --secondary-color: #355556;
+  --text-color: #000000;
+  --white-color: #fff;
+  --subtext-color: #646464;
+  --global-desktop-padding: 0 7rem;
+  --global-mobile-padding: 0 3rem;
+  --base-text: 14px;
+  --header-desktop-text: 38px;
+  --header-tablet-text: 30px;
+  --header-mobile-text: 24px;
+
+  --subheader-text: 15px;
+}
